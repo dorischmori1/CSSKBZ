@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .flag {
+      width: 900px;
+      height: 600px;
+      background-color: #ce1126;
+      position: relative;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden; /* Ensure that the rectangle doesn't overflow */
+    }
+
+    .flag-text {
+      color: white;
+      font-size: 70px; /* Increased font size */
+      position: absolute;
+      top: -50px; /* Adjusted top positioning */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      background-color: white; /* Changed background color to white */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black; /* Changed text color to black */
+      font-size: 70px; /* Increased font size */
+      position: relative;
+      z-index: 1; /* Ensure circle appears above the rectangle */
+      text-align: center; /* Center-align the text */
+    }
+
+    .blue-beam {
+      position: absolute;
+      width: 700px; /* Adjust the width as needed */
+      height: 360px; /* Adjust the height as needed */
+      background-color: #022765; /* Blue color */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p class="flag-text">The Flag</p>
+    <div class="blue-beam"></div>
+    <div class="circle">
+      <p style="margin: 0;">Of<br>Laos</p> <!-- "Of Laos" on separate lines -->
+    </div>
+  </div>
+</body>
+
+</html>
